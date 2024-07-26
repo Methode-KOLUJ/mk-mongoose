@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maths</title>
+    <link rel="stylesheet" href="../../../Cours.css" />
+    <link rel="icon" href="../../../Icons/Méthode.KOLUJ.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../Icons/Méthode.KOLUJ.ico" type="image/x-icon">
+
+  </head>
+  <body>
+    <header>
+      <span><h1>MATHS<span id="second-h1"> | 6ème</span></h1></span>
+    </header>
+    <div class="sidebar" id="sidebar">
+      <a href="../../../index.html"
+        ><img src="../../../Icons/bouton-metal-icone.png" width="55" height="55" alt="home"
+      /></a>
+      <a href="../../../Promotions/Promotions.html">PROMOTIONS</a>
+      <!-- <a href="./Services/Services.html">Services</a> -->
+      <a href="../../../Dashboard/Dashboard.html">STATISTIQUES</a>
+      <a href="../../../Contact.html">CONTACT</a>
+      <a href="../../../Ethan.html"
+        ><img
+          src="../../../Icons/MSG.png"
+          width="66"
+          height="66"
+          alt="Scolar-group" /></a
+      >
+    </div>
+    <button class="toggle-button" id="toggle-button">☰</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <h2>identité de l'apprenant</h2>
+        <form id="userForm">
+          <div class="input-group">
+            <label for="username"></label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="NOM COMPLET"
+              required />
+          </div>
+          <div class="input-group">
+            <label for="lastname"></label>
+            <input
+              type="password"
+              id="password_student"
+              name="password"
+              placeholder="MOT DE PASSE"
+              required />
+          </div>
+          <button type="submit" class="btn-submit">Commencer</button>
+        </form>
+      </div>
+    </div>
+    <div id="Joueur"><span class="JokerName">:</span></div>
+    <!-- lien des images -->
+    <div id="overlay">
+      <div id="image-container">
+        <img id="overlay-image" src="" alt="image_demonstrative">
+        <span id="close-button">&times;</span>
+      </div>
+    </div>
+    <!-- lien de question -->
+    <div class="container">
+      <div id="game-content">
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit-button">VALIDER</button>
+      </div>
+      <div id="result"></div>
+      <button id="restart-button">Recommencer</button>
+    </div>
+    <div id="score-progress">
+      <span class="point-obtenu">Point obtenu : </span
+      ><span id="current-score">0</span><span style="color: white; font-weight: bold;"> / </span><span id="total-questions">0</span>
+      <br />
+      <span class="pourcentage-obtenu">Pourcentage obtenu : </span
+      ><span id="progress-percentage">0%</span><br />
+      <span class="position">Question numéro :</span>
+      <span id="question-position"></span>
+    </div>
+    <footer>
+      <a href="../../Périodes/Table_de_Matières/Table 1.html" id="Accueil">Retour</a>
+    </footer>
+    <script src="./Maths.js" defer></script>
+    <script src="../../../Rules.js" defer></script>
+  </body>
+</html>

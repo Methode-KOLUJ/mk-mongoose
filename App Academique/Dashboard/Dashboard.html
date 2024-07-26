@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="Dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Tableau de bord</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="NOM COMPLET OU COURS">
+      <button id="searchButton">RECHERCHER</button>
+    </div>
+    <div class="results">
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>IDENTITES</th>
+            <th>COURS</th>
+            <th>POINTS OBTENUS</th>
+            <th>POURCENTAGES</th>
+            <th>DATES</th>
+            <th>HEURES</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="charts">
+      <div class="chart-container">
+        <canvas id="lineChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="pieChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="Dashboard.js"></script>
+</body>
+</html>
